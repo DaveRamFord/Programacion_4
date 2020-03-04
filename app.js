@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", e=>{
               "cm": 100,
               "pulgada":39.3701,
               "pie":3.28084,
-              "varas": 0.000621371};
+              "varas":1.1963081929167,
+              "yardas":1.09361,
+              "km":0.001,
+              "millas":0.000621371,};
   
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
@@ -46,7 +49,7 @@ document.addEventListener("DOMContentLoaded", e=>{
     if(opcion.value == "moneda"){
       var  array = ["dolar!Dolar","colones!Colones","yenes!Yenes","rupias!Rupias","lempiras!Lempiras","peso!Peso","bitcoin!Bitcoin"]; 
     } else if(opcion.value == "longitud"){
-      var array = ["mm!MM","cm!CM","mt!MT","km!KM","milla!Milla"];
+      var array = ["metro!Metro","cm!CM","pulgada!Pulgada","pie!Pie","varas!Varas","yardas!Yardas","km!KM","millas!Millas"];
     };
   
     for(var i=0;i<array.length;i++){ 
